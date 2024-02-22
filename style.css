@@ -5,8 +5,9 @@
 }
 label,
 input,
-button {
+button,
+p {
   display: block;
-  margin: 5px;
+  margin: 10px;
   width: 300px;
 }
