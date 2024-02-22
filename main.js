@@ -17,7 +17,7 @@ console.log(randomNumber);
 function takeNumber(event) {
   event.preventDefault();
   const inputNumberValue = parseInt(inputNumber.value);
-  if (inputNumberValue < 1 || inputNumberValue > 100 || inputNumberValue == '') {
+  if (inputNumberValue < 1 || inputNumberValue > 100) {
     inputHint.innerText = 'El número debe estar entre 1 y 100';
   } else if (inputNumberValue < randomNumber) {
     inputHint.innerText = 'Demasiado bajo';
@@ -25,13 +25,24 @@ function takeNumber(event) {
     inputHint.innerText = 'Demasiado alto';
   } else {
     inputHint.innerText = 'Has ganado, campeona!!';
+    return;
   }
 }
+//Función contador, que sumará +1 o no según el resultado obtenido
 let counter = 0;
 function numberTries(event) {
   event.preventDefault();
-  counter++;
-  inputTried.innerText = 'Número de intentos: ' + counter;
+  const inputNumberValue = inputNumber.value;
+  const inputNumberValueInteger = parseInt(inputNumber.value);
+  if (inputNumberValue === '') {
+    counter = counter;
+    inputHint.innerText = 'Introduce un número, por favor';
+  } else if (inputNumberValueInteger === randomNumber) {
+    counter = counter;
+  } else {
+    counter++;
+    inputTried.innerText = 'Número de intentos: ' + counter;
+  }
 }
 
 function handleGuessNumber(event) {
@@ -39,4 +50,5 @@ function handleGuessNumber(event) {
   takeNumber(event);
   numberTries(event);
 }
+
 buttonTest.addEventListener('click', handleGuessNumber);
