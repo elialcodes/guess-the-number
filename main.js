@@ -17,7 +17,7 @@ console.log(randomNumber);
 function takeNumber(event) {
   event.preventDefault();
   const inputNumberValue = parseInt(inputNumber.value);
-  if (inputNumberValue < 1 || inputNumberValue > 100) {
+  if (inputNumberValue < 1 || inputNumberValue > 100 || inputNumberValue == '') {
     inputHint.innerText = 'El número debe estar entre 1 y 100';
   } else if (inputNumberValue < randomNumber) {
     inputHint.innerText = 'Demasiado bajo';
