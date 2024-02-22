@@ -3,3 +3,10 @@
   margin: 0;
   padding: 0;
 }
+label,
+input,
+button {
+  display: block;
+  margin: 5px;
+  width: 300px;
+}
