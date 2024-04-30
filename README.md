@@ -1,3 +1,3 @@
-Ejercicio intermedio de evaluación módulo 2
+Juego sencillo para adivinar un número.
 
-http://beta.adalab.es/modulo-2-evaluacion-intermedia-elialcodes/
+url: https://elialcodes.github.io/guess-the-number/
