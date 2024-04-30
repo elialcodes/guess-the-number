@@ -24,7 +24,7 @@ function takeNumber(event) {
   } else if (inputNumberValue > randomNumber) {
     inputHint.innerText = 'Demasiado alto';
   } else {
-    inputHint.innerText = 'Has ganado, campeona!!';
+    inputHint.innerText = 'Felicidades, has ganado!!';
     return;
   }
 }
