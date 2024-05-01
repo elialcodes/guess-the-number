@@ -1,14 +1,8 @@
 # Guess the number
 
-A brief description of what this project does and who it's for
-
-
-## Features
-
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+Simple game where the user has to guess a number. 
+The game consists of entering in an input a number from 1 to 100. The game returns clues if the number entered is not valid (not between 1 and 100), too low or too high and number of attempts of the user.
+If the user enters the correct number, the game returns a congratulations message.
 
 
 ## Tech Stack
@@ -17,7 +11,5 @@ A brief description of what this project does and who it's for
 
 
 ## 🔗 Links
-[![url](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)]((https://elialcodes.github.io/guess-the-number/))
 
-
-url: https://elialcodes.github.io/guess-the-number/
+https://elialcodes.github.io/guess-the-number/
