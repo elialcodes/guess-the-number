@@ -1,11 +1,11 @@
-# Guess the number
+# Guess the number :four_leaf_clover:
 
 Simple game where the user has to guess a number. 
 The game consists of entering in an input a number from 1 to 100. The game returns clues if the number entered is not valid (not between 1 and 100), too low or too high and number of attempts of the user.
-If the user enters the correct number, the game returns a congratulations message.
+If the user enters the correct number, the game returns a congratulations message :tada:.
 
 
-## Tech Stack
+## Tech Stack :computer: :books:
 
 **Client:** HTML, CSS, JavaScript
 
