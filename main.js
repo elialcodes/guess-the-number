@@ -18,13 +18,13 @@ function takeNumber(event) {
   event.preventDefault();
   const inputNumberValue = parseInt(inputNumber.value);
   if (inputNumberValue < 1 || inputNumberValue > 100) {
-    inputHint.innerText = 'El número debe estar entre 1 y 100';
+    inputHint.innerText = 'Número entre 1 y 100';
   } else if (inputNumberValue < randomNumber) {
     inputHint.innerText = 'Demasiado bajo';
   } else if (inputNumberValue > randomNumber) {
     inputHint.innerText = 'Demasiado alto';
   } else {
-    inputHint.innerText = 'Felicidades, has ganado!!';
+    inputHint.innerText = '¡Felicidades, ganaste!';
     return;
   }
 }

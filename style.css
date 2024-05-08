@@ -3,37 +3,149 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: 'Courier New', Courier, monospace;
+  height: 100vh;
 }
 
-h1,
-label,
-input,
-button,
-p {
-  margin: 10px;
+header {
+  height: 60vh;
+  padding-top: 3vh;
+  font-size: 17px;
+  color: black;
+  text-align: center;
+  background: url('./blackboard-white-background.jpg') no-repeat;
+  background-size: 150% 90%;
+}
+
+main {
+  height: 40vh;
+}
+
+form {
+  padding: 2vh 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+label {
+  font-size: 20px;
 }
 
 input {
-  display: block;
   background-color: rgb(213, 219, 219);
   border-radius: 5px;
   height: 25px;
-  width: 200px;
+  width: 100px;
   padding-left: 5px;
   border: none;
 }
+
 button {
-  display: block;
   padding: 5px 10px;
+  width: 100px;
+  height: 25px;
   border-radius: 5px;
+  font-size: 14px;
   color: white;
   background-color: rgb(63, 223, 193);
   border: none;
 }
+
 p {
   border: 2px solid rgb(213, 219, 219);
-  width: 500px;
+  border-radius: 5px;
+  width: auto;
   padding: 4px;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  header {
+    font-size: 30px;
+    background-size: 140% 100%;
+  }
+
+  form {
+    padding: 5vh 50px;
+  }
+
+  label {
+    font-size: 35px;
+  }
+
+  input {
+    height: 40px;
+    width: 120px;
+    font-size: 25px;
+  }
+
+  button {
+    padding: 5px 10px;
+    height: 40px;
+    width: 120px;
+    font-size: 25px;
+  }
+
+  p {
+    border: 2px solid rgb(213, 219, 219);
+    border-radius: 5px;
+    height: 40px;
+    width: auto;
+    padding: 4px;
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: url('./blackboard-white-background.jpg') no-repeat;
+    background-size: 100% auto;
+  }
+
+  header {
+    padding-top: 5vh;
+    height: 15vh;
+    font-size: 30px;
+    background: none;
+  }
+
+  main {
+    height: 90vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  form {
+    padding: 0px 80px;
+  }
+
+  label {
+    font-size: 25px;
+  }
+
+  input {
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+  }
+
+  button {
+    padding: 5px 10px;
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+  }
+
+  p {
+    border: 2px solid rgb(213, 219, 219);
+    border-radius: 5px;
+    height: 40px;
+    width: auto;
+    padding: 4px;
+    font-size: 20px;
+  }
 }

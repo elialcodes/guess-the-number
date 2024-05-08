@@ -7,15 +7,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Adivina el número</h1>
-    <form action="">
-      <label for="number">Introduce aquí tu número</label>
-      <input class="js-inputNumber" type="text" id="number" />
-      <button class="js-inputButtonTest">Prueba</button>
-    </form>
-    <p class="js-inputHint">Pista: Escribe el número y dale a Prueba</p>
-    <p class="js-inputTried">Número de intentos:0</p>
-
+    <header><h1>Adivina el número</h1></header>
+    <main>
+      <!-- <div class="container"> -->
+      <form action="">
+        <label for="number">Introduce tu número:</label>
+        <input class="js-inputNumber" type="text" id="number" />
+        <button class="js-inputButtonTest">Prueba</button>
+        <p class="js-inputHint">Pista: Escribe un número</p>
+        <p class="js-inputTried">Número de intentos:0</p>
+      </form>
+      <!-- </div> -->
+    </main>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
